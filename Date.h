@@ -1,3 +1,5 @@
+#pragma once
+#include <iostream>
 #include <string>
 
 class Date
@@ -17,5 +19,5 @@ public:
 	int getmonth();
 	int getyear();
 	void print();
-
+	void operator= (const Date&);
 };

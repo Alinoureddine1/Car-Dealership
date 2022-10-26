@@ -22,7 +22,7 @@ Date::~Date() {
 }
 
 void Date::print() {
-	cout <<"Date: " << this->month << "/" << this->day << "/" << this->year << endl;
+	cout << this->month << "/" << this->day << "/" << this->year << endl;
 }
 
 void Date::setday(int x) {
@@ -42,4 +42,9 @@ int Date::getmonth() {
 }
 int Date::getyear() {
 	return this->year;
+}
+void Date::operator= (const Date& that) {
+	this->day = that.day;
+	this->month = that.month;
+	this->year = that.year;
 }
