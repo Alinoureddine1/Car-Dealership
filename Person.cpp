@@ -9,6 +9,8 @@ Person::Person() {
 }
 Person::Person(std::string nm, Date that) {
 	this->name = nm;
+	this->date_of_birth = that;
+
 }
 
 void Person::Print() {

@@ -13,6 +13,10 @@ NewCar::NewCar():Car() {
 	this->price=0.0;
 }
 
+NewCar::NewCar(int model, string colr):Car() {
+	this->model_year = model;
+	this->color = colr;
+}
 NewCar::NewCar(int id, int year, std::string color, int doors, double prix):Car(id) {
 	this->model_year = year;
 	this->color = color;
@@ -59,6 +63,7 @@ int NewCar::getno_of_doors() {
 double NewCar::getprice() {
 	return this->price;
 }
+
 
 NewCar::~NewCar() {
 	cout << "Object of type NewCar was deleted" << endl;

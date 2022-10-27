@@ -2,7 +2,7 @@
 #include "Client.h"
 #include "SalesPerson.h"
 #include "NewCar.h"
-#include "UsedCar.h"]
+#include "UsedCar.h"
 #include "Date.h"
 
 
@@ -30,6 +30,7 @@ public:
 	NewCar* getnewcar();
 	UsedCar* getusedcar();
 	Date getdate();
+	bool isequal(PurchaseContract*);
 	~PurchaseContract();
 };
 

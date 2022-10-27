@@ -43,6 +43,8 @@ int Date::getmonth() {
 int Date::getyear() {
 	return this->year;
 }
+
+
 void Date::operator= (const Date& that) {
 	this->day = that.day;
 	this->month = that.month;

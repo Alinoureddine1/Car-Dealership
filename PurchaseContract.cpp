@@ -28,7 +28,6 @@ PurchaseContract::PurchaseContract(const Client& cl, const SalesPerson& sales, c
 }
 
 void PurchaseContract::Print() {
-	cout << "Purchase Contract:\n";
 	cout << "Client details: \n";
 	this->client->Print();
 	cout << "Sales Person details: \n";
@@ -65,6 +64,11 @@ void PurchaseContract::setcar(const UsedCar& car) {
 
 void PurchaseContract::setdate(Date that) {
 	this->date_of_purchase = that;
+}
+
+bool PurchaseContract::isequal(PurchaseContract* that) {
+	if (this->client->getname() == that->client->getname() && this->salesperson->getname() == that->salesperson->getname()) { return true; }
+	return false;
 }
 
 Client* PurchaseContract::getclient() {

@@ -14,6 +14,7 @@ private:
 public:
 	NewCar();
 	NewCar(int, int, std::string, int, double);
+	NewCar(int ,std::string);
 	void print();
 	void setmodel_year(int);
 	void setcolor(std::string);

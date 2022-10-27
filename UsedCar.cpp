@@ -11,6 +11,9 @@ UsedCar::UsedCar(int id, int year, std::string color, int doors, double prix, st
 	this->manifacturer = manifac;
 	this->milage = miles;
 }
+UsedCar::UsedCar(int miles, std::string colr) :NewCar( miles, colr) {
+
+}
 void UsedCar::print() {
 	NewCar::print();
 	cout <<"Manifacturer: "<< this->manifacturer << endl;
@@ -28,6 +31,8 @@ std::string UsedCar::getmanifacturer() {
 int UsedCar::getmilage() {
 	return this->milage;
 }
+
+
 UsedCar::~UsedCar() {
 	cout << "Object of type UsedCard was deleted" << endl;
 }
